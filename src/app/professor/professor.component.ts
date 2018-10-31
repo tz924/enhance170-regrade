@@ -13,3 +13,12 @@ export class ProfessorComponent implements OnInit {
   }
 
 }
+
+interface Question {
+  content: string;
+  duration: number;
+  replies: number;
+  likes: number;
+  index: number;
+
+}

@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 /* Custom Import */
 import { LoginComponent } from './login/login.component';
+import { ProfessorComponent } from './professor/professor.component';
 
 const routes: Routes = [
   // Set root to login page
-  { path: '', component: LoginComponent },
-  // { path: 'about', component: AboutComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '', component: ProfessorComponent },
 ];
 
 @NgModule({
