@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { ProfessorComponent } from './professor/professor.component';
 import { LoginComponent } from './login/login.component';
 import { StudentComponent } from './student/student.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   /* Component Injection */
@@ -20,7 +21,8 @@ import { StudentComponent } from './student/student.component';
     // Custom
     ProfessorComponent,
     LoginComponent,
-    StudentComponent
+    StudentComponent,
+    NavigationComponent
   ],
   /* Module Injection */
   imports: [
