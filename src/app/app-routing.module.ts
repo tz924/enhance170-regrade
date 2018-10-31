@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-// import { UserComponent } from './components/user/user.component';
-// import { AboutComponent } from './components/about/about.component';
+
+/* Custom Import */
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  // Set root to login page
+  { path: '', component: LoginComponent },
   // { path: 'about', component: AboutComponent }
 ];
 

@@ -4,25 +4,35 @@ import { NgModule } from '@angular/core';
 
 // Custom Import Angular Module (In imports)
 import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 /* Component */
 import { AppComponent } from './app.component';
+import { ProfessorComponent } from './professor/professor.component';
+import { LoginComponent } from './login/login.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
-  // Component Injection
+  /* Component Injection */
   declarations: [
-    AppComponent
+    AppComponent,
     // Custom
+    ProfessorComponent,
+    LoginComponent,
+    StudentComponent
   ],
-  // Module Injection
+  /* Module Injection */
   imports: [
     BrowserModule,
     // Custom
     AppRoutingModule,
+    NgbModule.forRoot(),    // ng-bootstrap
+    FormsModule   // Forms data binding
   ],
-  // Service Injection
+  /* Service Injection */
   providers: [],
-  // Root Component
+  /* Root Component */
   bootstrap: [AppComponent]
 })
 export class AppModule { }

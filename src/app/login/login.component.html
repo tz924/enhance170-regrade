@@ -1,0 +1,49 @@
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <!-- Icon Here -->
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+    RelCom
+  </a>
+</nav>
+
+<div class="container main-div">
+
+  <h1 class="form-heading">Login Page</h1>
+
+  <div class="login-form">
+    <form id="Login">
+      <div class="form-group">
+        <div class="radio">
+          <label><input type="radio" name="optradio" checked>Professor</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Student</label>
+        </div>
+      </div>
+
+      <!-- Email -->
+
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Email Address">
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password"></label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password">
+      </div>
+
+      <!-- Reset Password -->
+      <div class="forgot">
+        <a href="reset.html">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" class="btn btn-primary">Login</button>
+
+    </form>
+  </div>
+
+</div>
