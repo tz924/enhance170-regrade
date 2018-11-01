@@ -44,7 +44,7 @@
       <div *ngIf="showQuestions" class="row">
 
         <!-- Question Item -->
-        <div *ngFor="let question of questions | slice:0:4" class="row question">
+        <div *ngFor="let question of questions | slice:0:4" class="row question" (click)="onQuestionClick()">
           <!-- Question -->
           <div class="col-md-10">
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, Query } from '@angular/core';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-professor',
@@ -49,6 +50,26 @@ export class ProfessorComponent implements OnInit {
       apartments oh. Dear so sing when in find read of call. As distrusts \
       behaviour abilities defective is. Never at water me might.',
       duration: 4,
+      nbrAnswers: 1,
+      nbrLikes: 10,
+    });
+
+    this.questions.push({
+      index: 3,
+      content: 'Compliment interested discretion estimating on stimulated \
+      apartments oh. Dear so sing when in find read of call. As distrusts \
+      behaviour abilities defective is. Never at water me might.',
+      duration: 1,
+      nbrAnswers: 1,
+      nbrLikes: 10,
+    });
+
+    this.questions.push({
+      index: 3,
+      content: 'Compliment interested discretion estimating on stimulated \
+      apartments oh. Dear so sing when in find read of call. As distrusts \
+      behaviour abilities defective is. Never at water me might.',
+      duration: 1,
       nbrAnswers: 1,
       nbrLikes: 10,
     });
@@ -115,9 +136,11 @@ export class ProfessorComponent implements OnInit {
     this.showQuestions = false;
   }
 
+  onQuestionClick() {
+    // Change it to expanded
+  }
+
 }
-
-
 
 interface Question {
   index: number;

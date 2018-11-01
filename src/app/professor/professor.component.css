@@ -54,6 +54,13 @@
 
 #questions {
   padding-left: 20px;
+  /* position: relative;
+  margin-left: -20%;
+  min-width: 400px; */
+}
+
+.question {
+  width: 100%;
 }
 
 #check {
