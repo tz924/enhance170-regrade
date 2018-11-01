@@ -13,6 +13,8 @@ import { ProfessorComponent } from './professor/professor.component';
 import { LoginComponent } from './login/login.component';
 import { StudentComponent } from './student/student.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   /* Component Injection */
@@ -22,7 +24,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     ProfessorComponent,
     LoginComponent,
     StudentComponent,
-    NavigationComponent
+    NavigationComponent,
+    ProfileComponent,
+    LogoutComponent
   ],
   /* Module Injection */
   imports: [

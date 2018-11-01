@@ -6,12 +6,26 @@
 
   <div class="login-form">
     <form id="Login">
-      <div class="form-group">
-        <div class="radio">
-          <label><input type="radio" name="optradio" checked>Professor</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Student</label>
+
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
+          <div class="form-check-inline">
+
+            <!-- Professor Radio -->
+            <label class="customradio"><span class="radiotextsty">Professor</span>
+              <input type="radio" [(ngModel)]="userType" name="userType" value="professor" checked>
+              <span class="checkmark"></span>
+            </label>        
+
+            <!-- Student Radio -->
+            <label class="customradio"><span class="radiotextsty">Student</span>
+              <input type="radio" [(ngModel)]="userType" name="userType" value="student">
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+
         </div>
       </div>
 
@@ -34,7 +48,7 @@
       </div>
 
       <!-- Login Button -->
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
 
     </form>
   </div>
