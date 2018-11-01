@@ -15,6 +15,7 @@ import { StudentComponent } from './student/student.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   /* Component Injection */
@@ -26,7 +27,8 @@ import { LogoutComponent } from './logout/logout.component';
     StudentComponent,
     NavigationComponent,
     ProfileComponent,
-    LogoutComponent
+    LogoutComponent,
+    CoursesComponent
   ],
   /* Module Injection */
   imports: [
