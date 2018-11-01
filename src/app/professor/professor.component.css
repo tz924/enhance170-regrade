@@ -1,3 +1,69 @@
 #slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 550px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.truncate {
+  position: relative;
+  width: 115%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate-question {
+  display: block;
+
+  /* Fallback for non-webkit */
+  display: -webkit-box;
   max-width: 100%;
+  height: 60px;
+
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row#course-title {
+  min-height: 7vh;
+}
+
+.row#course-status {
+  min-height: 5vh;
+}
+
+#hand-div {
+  display: flex;
+  min-height: 12vh;
+}
+
+#hand {
+  max-height: 80px;
+}
+
+#questions {
+  padding-left: 20px;
+}
+
+#check {
+  margin-bottom: 12px;
+}
+
+#check-view {
+  margin-right: 36px;
+}
+
+#change-view {
+  margin-top: 18px;
 }
