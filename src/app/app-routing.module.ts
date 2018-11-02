@@ -11,6 +11,8 @@ import { CoursesComponent } from './courses/courses.component';
 // Debug
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AfterComponent } from './professor/after/after.component';
+import { StartComponent } from './professor/start/start.component';
 
 const routes: Routes = [
   // Set root to login page
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'student', component: StudentComponent },
   // Debug Route
+  { path: 'prof-start', component: StartComponent },
+  { path: 'prof-after', component: AfterComponent },
   { path: 'courses', component: CoursesComponent },
   { path: 'sidebar', component: SidebarComponent },
   { path: 'navigation', component: NavigationComponent },
