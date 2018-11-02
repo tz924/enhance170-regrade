@@ -1,29 +1,29 @@
 <app-navigation></app-navigation>
 <app-sidebar>
 
+  <div class="row">MGT 160 285 students</div>
+  <div class="row">
     <form id="Login">
 
-        <!-- Email -->
+      <!-- Email -->
 
-        <div class="form-group">
-          <label for="email"></label>
-          <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Email Address">
-        </div>
+      <div class="form-group">
+        <label for="check-in"></label>
+        <input type="text" class="form-control" [(ngModel)]="code" name="code" placeholder="Email Address">
+      </div>
 
-        <!-- Password -->
-        <div class="form-group">
-          <label for="password"></label>
-          <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password">
-        </div>
+      <!-- Password -->
+      <div class="form-group">
+        <label for="upload-file"></label>
+        <input type="file" class="form-control" [(ngModel)]="file" name="file" placeholder="Password">
+      </div>
 
-        <!-- Reset Password -->
-        <div class="forgot">
-          <a href="reset.html">Forgot password?</a>
-        </div>
+      <!-- Login Button -->
+      <button type="submit" class="btn btn-info" (click)="onStart()">Start</button>
 
-        <!-- Login Button -->
-        <button type="submit" class="btn btn-info" (click)="onStart()">Start</button>
+    </form>
+  </div>
 
-      </form>
+
 
 </app-sidebar>
