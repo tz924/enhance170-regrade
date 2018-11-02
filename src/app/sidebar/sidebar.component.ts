@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent, Course } from '../app.component';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -8,28 +10,19 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   courses: Course[];
-  currentCourse: Course;
 
-  constructor() { }
+  constructor(private app: AppComponent) { }
 
   ngOnInit() {
     this.courses = [];
 
-    this.courses.push({ department: 'CSE', id: 138 });
-    this.courses.push({ department: 'MGT', id: 160 });
-    this.courses.push({ department: 'COGS', id: 120 });
-
-    this.currentCourse = this.courses[0];
+    this.courses.push({ department: 'CSE', id: 138, attendence: 123 });
+    this.courses.push({ department: 'MGT', id: 160, attendence: 45 });
+    this.courses.push({ department: 'COGS', id: 120, attendence: 60 });
   }
 
   onCourseClick(course: Course) {
-    this.currentCourse = course;
-    console.log(this.currentCourse);
+    this.app.currentCourse = course;
   }
 
-}
-
-interface Course {
-  department: string;
-  id: number;
 }

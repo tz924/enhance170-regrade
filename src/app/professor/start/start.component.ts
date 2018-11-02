@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppComponent, Course } from '../../app.component';
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
@@ -7,15 +8,16 @@ import { Router } from '@angular/router';
 })
 export class StartComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  course: Course;
+
+  constructor(private router: Router, private app: AppComponent) { }
 
   ngOnInit() {
-
+    this.course = this.app.currentCourse;
   }
 
   onStart() {
     this.router.navigateByUrl('/professor');
   }
-
 
 }
