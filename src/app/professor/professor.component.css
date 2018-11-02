@@ -44,7 +44,7 @@
 }
 
 #hand-div {
-  display: flex;
+  display: block;
   min-height: 12vh;
 }
 
@@ -65,7 +65,7 @@
 
 #check {
   margin-bottom: 12px;
-  color:#36EA9E; 
+  color: #36EA9E;
 }
 
 #check-view {
@@ -77,14 +77,28 @@
 }
 
 h1 {
-  font-family: montserrat; 
-  font-weight: bold; 
-  color: #f0ad4e; 
+  font-family: montserrat;
+  font-weight: bold;
+  color: #f0ad4e;
 }
 
 #lecture {
-  text-align: center; 
-  font-weight: bold; 
-  color: #f0ad4e; 
+  text-align: center;
+  font-weight: bold;
+  color: #f0ad4e;
 }
 
+.question-content {
+  padding-left: 12px;
+}
+
+.question-duration {
+  display: inline;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  padding: none;
+}

@@ -12,7 +12,7 @@
         <div class="col-md-4">
           <h2>Time: {{lecture.time.getHours()}}:{{lecture.time.getMinutes()}}</h2>
         </div>
-      <div class="col-md-4" id="lecture">
+        <div class="col-md-4" id="lecture">
           <p>{{lecture.title}}</p>
         </div>
         <div class="col-md-4">
@@ -36,8 +36,7 @@
 
       <!-- Hand -->
       <div class="row" id="hand-div">
-        <button (click)="showNormalQuestions()"><img src="assets/handraiseb.png" alt="raise hand" class="mx-auto"
-            id="hand">
+        <button (click)="showNormalQuestions()"><img src="assets/handraiseb.png" alt="raise hand" class="mx-auto" id="hand">
         </button>
       </div>
 
@@ -56,7 +55,7 @@
                 <button *ngIf="question.index >= 10">Q{{question.index}}</button>
               </div>
               <div class="col-md-10">
-                <p class="truncate-question">{{question.content}}</p>
+                <p class="truncate-question question-content">{{question.content}}</p>
               </div>
 
             </div>
@@ -64,7 +63,7 @@
             <!-- Status -->
             <div class="row">
               <!-- Duration -->
-              <div class="col-md-4">
+              <div class="col-md-4 question-duration">
                 <p *ngIf="question.duration <= 1" class="truncate">
                   <img src="assets/clock.png" width="25" height="25" alt="clock">Now
 
