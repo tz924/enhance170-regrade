@@ -36,3 +36,13 @@
 .menu ul li:last-child {
   border-bottom: none;
 }
+
+/* For course */
+.light-gray {
+  background-color: #F1F1F1;
+}
+
+.dark-gray {
+  font-size: 100px;
+  background-color: #C4C4C4;
+}

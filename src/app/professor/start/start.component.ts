@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-start',
@@ -16,5 +16,6 @@ export class StartComponent implements OnInit {
   onStart() {
     this.router.navigateByUrl('/professor');
   }
+
 
 }

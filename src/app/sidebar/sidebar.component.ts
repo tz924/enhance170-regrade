@@ -22,6 +22,11 @@ export class SidebarComponent implements OnInit {
     this.currentCourse = this.courses[0];
   }
 
+  onCourseClick(course: Course) {
+    this.currentCourse = course;
+    console.log(this.currentCourse);
+  }
+
 }
 
 interface Course {
