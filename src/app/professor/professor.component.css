@@ -6,7 +6,8 @@
 }
 
 .container {
-  margin-top: 30px;
+  padding-top: 5vh;
+  height: 80vh;
 }
 
 .truncate {
@@ -76,6 +77,17 @@
   margin-top: 18px;
 }
 
+#delete-view {
+  margin-right: 36px;
+}
+
+#back-view button {
+  min-height: 30px;
+  background: darkgray;
+  font-weight: bold;
+}
+
+
 h1 {
   font-family: montserrat;
   font-weight: bold;
@@ -101,4 +113,9 @@ input {
   background: none;
   border: none;
   padding: none;
+}
+
+#more {
+  background-color: darkgray;
+  font-weight: bold;
 }

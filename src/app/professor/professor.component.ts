@@ -1,5 +1,6 @@
 import { Component, OnInit, Query } from '@angular/core';
 import { $ } from 'protractor';
+import { randomBytes } from 'crypto';
 
 @Component({
   selector: 'app-professor',
@@ -138,6 +139,18 @@ export class ProfessorComponent implements OnInit {
 
   onQuestionClick() {
     // Change it to expanded
+  }
+
+  onMoreClick() {
+    this.questions.push({
+      index: Math.floor(Math.random()),
+      content: 'Compliment interested discretion estimating on stimulated \
+      apartments oh. Dear so sing when in find read of call. As distrusts \
+      behaviour abilities defective is. Never at water me might.',
+      duration: Math.floor(Math.random() * 10) + Math.floor(Math.random()),
+      nbrAnswers: Math.floor(Math.random()),
+      nbrLikes: Math.floor(Math.random() * 10) + Math.floor(Math.random()),
+    });
   }
 
 }
