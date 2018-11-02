@@ -16,8 +16,9 @@ import { StartComponent } from './professor/start/start.component';
 
 const routes: Routes = [
   // Set root to login page
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'professor', component: ProfessorComponent },
-  { path: '', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'student', component: StudentComponent },
   // Debug Route
