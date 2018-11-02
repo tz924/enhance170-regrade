@@ -16,6 +16,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
 import { CoursesComponent } from './courses/courses.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   /* Component Injection */
@@ -28,7 +29,8 @@ import { CoursesComponent } from './courses/courses.component';
     NavigationComponent,
     ProfileComponent,
     LogoutComponent,
-    CoursesComponent
+    CoursesComponent,
+    SidebarComponent
   ],
   /* Module Injection */
   imports: [
