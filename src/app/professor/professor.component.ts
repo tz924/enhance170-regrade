@@ -1,6 +1,4 @@
 import { Component, OnInit, Query } from '@angular/core';
-import { $ } from 'protractor';
-import { randomBytes } from 'crypto';
 
 @Component({
   selector: 'app-professor',

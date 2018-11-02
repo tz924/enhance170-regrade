@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 /* Component */
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ import { AfterComponent } from './professor/after/after.component';
     // Custom
     AppRoutingModule,
     NgbModule.forRoot(),    // ng-bootstrap
-    FormsModule   // Forms data binding
+    FormsModule,   // Forms data binding,
+    AngularFontAwesomeModule
   ],
   /* Service Injection */
   providers: [],
