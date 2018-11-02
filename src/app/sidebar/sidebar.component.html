@@ -1,24 +1,35 @@
-<div class="wrapper">
-  <!-- Sidebar -->
-  <nav id="sidebar">
-    <div class="sidebar-header">
-      <h3>Bootstrap Sidebar</h3>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="center">
+        <!-- Profile Image -->
+        <div class="profile-img">
+          <img src="https://via.placeholder.com/80" alt="">
+        </div>
+        <!-- END Profile Image -->
+
+        <!-- Sidebar Title -->
+        <div class="title center">
+          Course
+        </div>
+        <!-- END Sidebar Title -->
+
+        <!-- Sidebar Menu -->
+        <div class="menu">
+          <ul>
+            <!-- Courses -->
+            <li *ngFor="let course of courses">{{course.department}} {{course.id}}</li>
+          </ul>
+        </div>
+        <!-- Sidebar Menu -->
+      </div>
     </div>
 
-    <ul class="list-unstyled components">
-      <!-- Picture -->
-      <img src="https://via.placeholder.com/80" alt="">
+    <!-- Content -->
+    <div class="col-md-9">
+      <ng-content></ng-content>
+    </div>
 
-      <!-- Courses -->
-      <h2>Courses</h2>
-      <li *ngFor="let course of courses">{{course.department}} {{course.id}}</li>
-
-    </ul>
-
-  </nav>
-
-  <!-- Page Content Holder -->
-  <div id="content">
-    <ng-content></ng-content>
   </div>
 </div>
