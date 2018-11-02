@@ -6,8 +6,9 @@
 }
 
 .container {
+  min-width: 1200px;
   padding-top: 5vh;
-  height: 80vh;
+  height: 90vh;
 }
 
 .truncate {
@@ -39,28 +40,47 @@
 .row#course-title {
   min-height: 7vh;
 }
+#course-title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color:black;
+}
+
+#lecture {
+  font-size: 24px;
+}
 
 .row#course-status {
   min-height: 5vh;
 }
 
 #hand-div {
-  display: block;
+  text-align: center;
   min-height: 12vh;
 }
 
-#hand {
-  max-height: 80px;
+#hand-div img {
+  max-width: 80px;
+  display: block;
+}
+
+#hand-div button {
+  margin: auto;
+  display: block;
 }
 
 #questions {
-  padding-left: 20px;
-  /* position: relative;
-  margin-left: -20%;
-  min-width: 400px; */
+  padding: 0;
+  margin-left: 2vw;
+  margin-right: -2vw;
 }
 
 .question {
+  width: 100%;
+}
+
+.row.status {
+  padding-left: 20px;
   width: 100%;
 }
 
@@ -69,16 +89,8 @@
   color: #36EA9E;
 }
 
-#check-view {
-  margin-right: 36px;
-}
-
 #change-view {
-  margin-top: 18px;
-}
-
-#delete-view {
-  margin-right: 36px;
+  margin-top: 50px;
 }
 
 #back-view button {
@@ -86,7 +98,6 @@
   background: darkgray;
   font-weight: bold;
 }
-
 
 h1 {
   font-family: montserrat;
