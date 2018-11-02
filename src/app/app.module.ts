@@ -18,6 +18,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { StartComponent } from './professor/start/start.component';
+import { AfterComponent } from './professor/after/after.component';
 
 @NgModule({
   /* Component Injection */
@@ -32,7 +33,8 @@ import { StartComponent } from './professor/start/start.component';
     LogoutComponent,
     CoursesComponent,
     SidebarComponent,
-    StartComponent
+    StartComponent,
+    AfterComponent
   ],
   /* Module Injection */
   imports: [
