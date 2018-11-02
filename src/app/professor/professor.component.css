@@ -65,6 +65,7 @@
 
 #check {
   margin-bottom: 12px;
+  color:#36EA9E; 
 }
 
 #check-view {
@@ -74,3 +75,16 @@
 #change-view {
   margin-top: 18px;
 }
+
+h1 {
+  font-family: montserrat; 
+  font-weight: bold; 
+  color: #f0ad4e; 
+}
+
+#lecture {
+  text-align: center; 
+  font-weight: bold; 
+  color: #f0ad4e; 
+}
+

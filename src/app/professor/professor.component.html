@@ -7,11 +7,12 @@
         <h1 class="mx-auto">CSE 170</h1>
       </div>
 
+
       <div class="row" id="course-status">
         <div class="col-md-4">
           <h2>Time: {{lecture.time.getHours()}}:{{lecture.time.getMinutes()}}</h2>
         </div>
-        <div class="col-md-4">
+      <div class="col-md-4" id="lecture">
           <p>{{lecture.title}}</p>
         </div>
         <div class="col-md-4">
@@ -24,7 +25,7 @@
           width="800" height="600" frameborder="0" scrolling="auto">
         </iframe>
       </div>
-
+      <br />
       <div class="row">
         <button type="button" class="btn btn-success mx-auto" routerLink="/prof-after">Done</button>
       </div>
@@ -35,7 +36,7 @@
 
       <!-- Hand -->
       <div class="row" id="hand-div">
-        <button (click)="showNormalQuestions()"><img src="https://via.placeholder.com/80" alt="raise hand" class="mx-auto"
+        <button (click)="showNormalQuestions()"><img src="assets/handraiseb.png" alt="raise hand" class="mx-auto"
             id="hand">
         </button>
       </div>
@@ -65,16 +66,16 @@
               <!-- Duration -->
               <div class="col-md-4">
                 <p *ngIf="question.duration <= 1" class="truncate">
-                  <img src="https://via.placeholder.com/25" alt="clock">Now
+                  <img src="assets/clock.png" width="25" height="25" alt="clock">Now
 
                   <p *ngIf="question.duration > 1" class="truncate">
-                    <img src="https://via.placeholder.com/25" alt="clock">{{question.duration}}</p>
+                    <img src="assets/clock.png" width="25" height="25" alt="clock">{{question.duration}}</p>
               </div>
 
               <!-- Answers -->
               <div class="col-md-4">
                 <p class="truncate">
-                  <img src="https://via.placeholder.com/25" alt="answer">
+                  <img src="assets/answer.png" width="20" height="20" alt="answer">
                   {{question.nbrAnswers}}
                 </p>
               </div>
@@ -82,7 +83,7 @@
               <!-- Likes -->
               <div class="col-md-4">
                 <p class="truncate">
-                  <img src="https://via.placeholder.com/25" alt="likes">
+                  <img src="assets/thumbup.png" width="20" height="20" alt="likes">
                   {{question.nbrLikes}}
                 </p>
               </div>
@@ -95,14 +96,14 @@
             <!-- Check Button -->
             <div class="row" id="check">
               <button (click)="checkQuestion(question.index)">
-                <img src="https://via.placeholder.com/40" alt="check">
+                <img src="assets/checkblackg.png" width="30" height="30" alt="check">
               </button>
             </div>
 
             <!-- Delete Button -->
             <div class="row">
               <button (click)="deleteQuestion(question.index)">
-                <img src="https://via.placeholder.com/40" alt="delete">
+                <img src="assets/xblackr.png" width="30" height="30" alt="delete">
               </button>
             </div>
 
@@ -141,16 +142,16 @@
             <!-- Duration -->
             <div class="col-md-4">
               <p *ngIf="question.duration <= 1" class="truncate">
-                <img src="https://via.placeholder.com/25" alt="clock">Now
+                <img src="assets/clock.png" width="25" height="25" alt="clock">Now
 
                 <p *ngIf="question.duration > 1" class="truncate">
-                  <img src="https://via.placeholder.com/25" alt="clock">{{question.duration}}</p>
+                  <img src="assets/clock.png" width="25" height="25" alt="clock">{{question.duration}}</p>
             </div>
 
             <!-- Answers -->
             <div class="col-md-4">
               <p class="truncate">
-                <img src="https://via.placeholder.com/25" alt="answer">
+                <img src="assets/answer.png" width="20" height="20" alt="answer">
                 {{question.nbrAnswers}}
               </p>
             </div>
@@ -158,7 +159,7 @@
             <!-- Likes -->
             <div class="col-md-4">
               <p class="truncate">
-                <img src="https://via.placeholder.com/25" alt="likes">
+                <img src="assets/thumbup.png" width="20" height="20" alt="likes">
                 {{question.nbrLikes}}
               </p>
             </div>
@@ -191,16 +192,16 @@
             <!-- Duration -->
             <div class="col-md-4">
               <p *ngIf="question.duration <= 1" class="truncate">
-                <img src="https://via.placeholder.com/25" alt="clock">Now
+                <img src="assets/clock.png" width="25" height="25" alt="clock">Now
 
                 <p *ngIf="question.duration > 1" class="truncate">
-                  <img src="https://via.placeholder.com/25" alt="clock">{{question.duration}}</p>
+                  <img src="assets/clock.png" width="25" height="25" alt="clock">{{question.duration}}</p>
             </div>
 
             <!-- Answers -->
             <div class="col-md-4">
               <p class="truncate">
-                <img src="https://via.placeholder.com/25" alt="answer">
+                <img src="assets/answer.png" width="20" height="20" alt="answer">
                 {{question.nbrAnswers}}
               </p>
             </div>
@@ -208,7 +209,7 @@
             <!-- Likes -->
             <div class="col-md-4">
               <p class="truncate">
-                <img src="https://via.placeholder.com/25" alt="likes">
+                <img src="assets/thumbup.png" width="20" height="20" alt="likes">
                 {{question.nbrLikes}}
               </p>
             </div>
@@ -225,11 +226,11 @@
         </div>
 
         <div class="col-md-1" id="check-view">
-          <button (click)="showCheckedQuestions()"><img src=" https://via.placeholder.com/48" alt="check"></button>
+          <button (click)="showCheckedQuestions()"><img src="assets/checkblackg.png" width="30" height="30" alt="check"></button>
         </div>
 
         <div class="col-md-1" id=delete-view>
-          <button (click)="showDeletedQuestions()"><img src="https://via.placeholder.com/48" alt="delete"></button>
+          <button (click)="showDeletedQuestions()"><img src="assets/xblackr.png" width="30" height="30" alt="delete"></button>
         </div>
 
       </div>
