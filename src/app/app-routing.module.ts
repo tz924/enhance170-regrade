@@ -10,7 +10,7 @@ import { CoursesComponent } from './courses/courses.component';
 
 const routes: Routes = [
   // Set root to login page
-  { path: '', component: CoursesComponent },
+  // { path: '', component: CoursesComponent },
   { path: 'professor', component: ProfessorComponent },
   { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
