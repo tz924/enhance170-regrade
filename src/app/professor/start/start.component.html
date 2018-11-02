@@ -1,2 +1,29 @@
 <app-navigation></app-navigation>
-<app-sidebar>Hello</app-sidebar>
+<app-sidebar>
+
+    <form id="Login">
+
+        <!-- Email -->
+
+        <div class="form-group">
+          <label for="email"></label>
+          <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Email Address">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password"></label>
+          <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password">
+        </div>
+
+        <!-- Reset Password -->
+        <div class="forgot">
+          <a href="reset.html">Forgot password?</a>
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit" class="btn btn-info" (click)="onStart()">Start</button>
+
+      </form>
+
+</app-sidebar>
