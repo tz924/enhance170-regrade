@@ -8,13 +8,20 @@ import { ProfileComponent } from './profile/profile.component';
 import { StudentComponent } from './student/student.component';
 import { CoursesComponent } from './courses/courses.component';
 
+// Debug
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
 const routes: Routes = [
   // Set root to login page
-  // { path: '', component: CoursesComponent },
   { path: 'professor', component: ProfessorComponent },
   { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'student', component: StudentComponent }
+  { path: 'student', component: StudentComponent },
+  // Debug Route
+  { path: 'courses', component: CoursesComponent },
+  { path: 'sidebar', component: SidebarComponent },
+  { path: 'navigation', component: NavigationComponent },
 ];
 
 @NgModule({
