@@ -218,6 +218,7 @@
 
       </div>
 
+
       <!-- Change View -->
       <div class="row" id="change-view">
 
@@ -229,11 +230,18 @@
           <button (click)="showCheckedQuestions()"><img src="assets/checkblackg.png" width="30" height="30" alt="check"></button>
         </div>
 
-        <div class="col-md-1" id=delete-view>
+        <div class="col-md-1" id="delete-view">
           <button (click)="showDeletedQuestions()"><img src="assets/xblackr.png" width="30" height="30" alt="delete"></button>
         </div>
 
+
+        <!-- Question View-->
+        <div class="col-md-2" id="back-view">
+          <button (click)="showNormalQuestions()">Back</button>
+        </div>
+
       </div>
+
 
     </div>
 
